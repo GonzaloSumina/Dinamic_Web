@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <form action="post.php" method="post">
+      Nombre: <input type="text" name="name" /><br />
+      Apellido: <input type="text" name="lastname" /> <br />
+      Ocupacion: <input type="text" name="ocupacion" /> <br />
+      Telefono: <input type="text" name="telefono" /><br />
+      Email: <input type="text" name="email" /><br />
+      Fecha de Nacimiento: <input type="date" name="fnac" /><br />
+      <label for="">Nacionalidad:</label>
+      <select name="nacionalidad">
+        <option value="Peru">Peru</option>
+        <option value="Chile">Chile</option>
+        <option value="Brasil">Brasil</option>
+        <option value="Argentina">Argentina</option>
+      </select>
+      <p>Idiomas:</p>
+      <input type="checkbox" name="Portugues" value="Portugues" />
+      <label for="">Portugues</label><br />
+      <input type="checkbox" name="Italiano" value="Italiano" />
+      <label for="">Italiano</label><br />
+      <input type="checkbox" name="Ingles" value="Ingles" />
+      <label for="">Ingles</label><br />
+      <input type="checkbox" name="otro" value="otro" />
+      <label for="">Otro</label><br />
+      <input type="text" name="otro" />
+
+      <p>Nivel de ingles:</p>
+      <input type="radio" id="basico" name="n_ingles" value="Basico" />
+      <label for="basico">Basico</label><br />
+      <input type="radio" id="intermedio" name="n_ingles" value="Intermedio" />
+      <label for="intermedio">Intermedio</label><br />
+      <input type="radio" id="avanzado" name="n_ingles" value="Avanzado" />
+      <label for="avanzado">Avanzado</label><br />
+      <input type="radio" id="fluido" name="n_ingles" value="Fluido" />
+      <label for="fluido">Fluido</label><br />
+
+      <label for="LP">Lenguajes de programacion:</label>
+      <select name="LP" multiple>
+        <option value="HTML">HTML</option>
+        <option value="CSS">CSS</option>
+        <option value="JavaScript">JavaScript</option>
+        <option value="C++">C++</option>
+      </select>
+      <br />
+      <label for="aptitudes">Aptitudes:</label>
+      <input list="aptitudes" name="aptitudes" id="aptitudes" />
+      <datalist id="aptitudes"></datalist><br />
+      <label for="habilidades">Habilidades:</label><br />
+      <input
+        type="checkbox"
+        id="hab1"
+        name="hab1"
+        value="Acondicionamiento fisico"
+      />
+      <label for="hab1"> Acondicionamiento fisico</label><br />
+      <input
+        type="checkbox"
+        id="hab2"
+        name="hab2"
+        value="Creacion videos deportivos"
+      />
+      <label for="hab2"> Creacion videos deportivos</label><br />
+
+      <input type="checkbox" id="hab3" name="hab3" value="Pack office" />
+      <label for="hab3"> Pack office</label><br /><br />
+
+      <p><label for="perfil">Perfil:</label></p>
+      <textarea id="perfil" name="perfil"></textarea>
+      <br />
+      <p><label for="">Experiencia laboral:</label></p>
+      <textarea id="exp_lbral" name="exp_lbral"></textarea>
+      <br />
+      <p><label for="">Formacion:</label></p>
+      <textarea id="frmcion" name="Formacion"></textarea>
+      <br />
+      <input type="submit" />
+    </form>
+  </body>
+</html>
